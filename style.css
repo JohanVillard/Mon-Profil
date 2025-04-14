@@ -1,0 +1,106 @@
+/* Reset de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffe9da;  /* Couleur de fond douce */
+    color: #637373;  /* Texte en gris foncé */
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Titre */
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ff9a76;  /* Titre en couleur orange doux */
+}
+
+/* Sous-titre */
+.container p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #679b9b;  /* Sous-titre en bleu-gris */
+}
+
+/* Liens */
+.links a {
+    display: block;
+    margin: 0.75rem auto;
+    padding: 0.75rem 1rem;
+    background-color: #ff9a76;  /* Fond des liens en orange doux */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #679b9b;  /* Lien devient bleu-gris au survol */
+}
+
+/* Séparateur */
+.links hr {
+    margin: 1rem auto;
+    width: 60%;
+    border: none;
+    border-top: 1px solid #637373;  /* Séparateur gris foncé */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .links a {
+        width: 100%; /* 100% de la largeur pour les petits écrans */
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 0.95rem;
+    }
+
+    .links a {
+        font-size: 0.95rem;
+    }
+}
+
+
